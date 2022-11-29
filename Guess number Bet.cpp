@@ -41,6 +41,7 @@ int main()
 			cout<<"         --------------------\n\n";
 			cout<<"  => Congrate! Now your money is: "<<money+bet<<endl;
 			money+=bet;
+			Dice=rand()%6+1;
  		}
 		else if(user_guess !=Dice && user_guess>0 && user_guess<=6 )
 		{
@@ -49,6 +50,7 @@ int main()
 			cout<<"         --------------------\n\n";
 			cout<<"  => Your balance remain: "<<money-bet<<endl;
 			money-=bet;
+			Dice=rand()%6+1;
 		}
 		else 
 		{
